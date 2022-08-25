@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "generate": "notablog generate .",
+    "generate": "notablog generate . && rm -r doc && cp -r public doc",
     "preview": "cd public && http-server"
   },
   "dependencies": {
