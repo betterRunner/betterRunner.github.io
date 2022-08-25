@@ -1,0 +1,15 @@
+{
+  "name": "notablog",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "generate": "notablog generate .",
+    "preview": "cd public && http-server"
+  },
+  "dependencies": {
+    "notablog": "^0.8.0"
+  },
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}
