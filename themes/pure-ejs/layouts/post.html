@@ -49,16 +49,30 @@
       </div>
     <% } %>
   </header>
-  <%- post.contentHTML %>
-  <%- include('partials/footer.html', { siteMeta }) %>
 
+  <!-- content -->
+  <%- post.contentHTML %>
+
+  <!-- likes -->
+  <div
+    data-lyket-type="like"
+    data-lyket-id="notion-test"
+    data-lyket-template="twitter"
+    style="text-align: center;"
+  ></div>
+  <script src="https://unpkg.com/@lyket/widget@latest/dist/lyket.js?apiKey=pt_209742193917ae9a77b2cab613b23e"></script>
+
+  <!-- comments -->
   <script src="https://utteranc.es/client.js"
     repo="betterRunner/betterRunner.github.io"
     issue-term="pathname"
     theme="github-light"
     crossorigin="anonymous"
     async>
-</script>
+  </script>
+
+  <!-- footer -->
+  <%- include('partials/footer.html', { siteMeta }) %>
 </body>
 
 </html>
